@@ -1,0 +1,156 @@
+/* Game State styles */
+
+.timer {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: white;
+}
+
+.game-header .score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-header div h1, .game-header div h2, .game-header div h3 {
+  margin: 5px;
+}
+
+.game-cat {
+  display: flex;
+  justify-content: space-between;
+}
+
+.game-cat div {
+  image: url(/../curtain-left.png);
+}
+
+.game-cat-content {
+  margin: auto;
+  background-color: blanchedalmond;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 20px;
+
+}
+
+/* Quiz Area styles */
+
+.movie-img {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-img div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.movie-img img {
+  width: 350px;
+  margin:10px;
+}
+
+#form1 {
+  display: flex;
+  flex-direction: column;
+}
+
+#form1 div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.answer-checkbox {
+  background-color: #FEB702;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 200px;
+  position: relative;
+  height: 30px;
+  margin: 10px;
+}
+
+input[type=radio] {
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  opacity: 0;
+  width: 200px;
+  height: 30px;
+}
+
+input[type=radio]:checked + span {
+  background-color: rgb(255, 115, 0);  
+  border-radius: 5px;
+  width: 198px;
+  height: 28px;
+}
+
+.answer-content {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+/* Progress bar styles */
+
+.progress-bar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7vh;
+  padding: 20px;
+}
+
+.progress-bar {
+  display: flex;
+  align-items: flex-start;
+  width: 300px;
+  height: 20px;
+  border: 1px solid black;
+  border-radius: 50px;
+  padding: 0;
+}
+
+.filler {
+  height: 20px;
+  background-color: #FE007A;
+  border-radius: 50px;
+  width: 298px;
+  height: 18px;
+}
+
+/* Results styles */
+
+@media only screen and (max-width: 510px) {
+  .movie-img img {
+    width: 150px;
+  }
+
+  #form1 div {
+    flex-direction: column;
+  }
+}
